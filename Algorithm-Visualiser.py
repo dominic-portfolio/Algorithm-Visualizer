@@ -72,18 +72,21 @@ def draw_title(draw_info, algo_name, ascending):
     title_x = (draw_info.width - title_surface.get_width()) / 2
     title_y = 0
     draw_info.window.blit(title_surface, (title_x, title_y))
+    
 def draw_controls(draw_info):
     controls_text = "Q - Quit | R - Reset | SPACE - Start/Resume/Stop | A - Ascending | D - Descending"
     controls_surface = draw_info.FONT.render(controls_text, 1, draw_info.BLACK)
     controls_x = (draw_info.width - controls_surface.get_width()) / 2
     controls_y = draw_info.LARGE_FONT.get_height()
     draw_info.window.blit(controls_surface, (controls_x, controls_y))
+    
 def draw_sorting_options(draw_info):
     sorting_text = "I - Insertion Sort | B - Bubble Sort | S - Selection Sort | H - Heap Sort"
     sorting_surface = draw_info.FONT.render(sorting_text, 1, draw_info.BLACK)
     sorting_x = (draw_info.width - sorting_surface.get_width()) / 2
     sorting_y = draw_info.LARGE_FONT.get_height() + draw_info.FONT.get_height()
     draw_info.window.blit(sorting_surface, (sorting_x, sorting_y))
+
 def draw_complexity_info(draw_info, algo_name):
     complexities = { # using dictionary to store values
         "Bubble Sort": ("O(n^2)", "O(1)"),
@@ -97,6 +100,7 @@ def draw_complexity_info(draw_info, algo_name):
     complexity_x = (draw_info.width - complexity_surface.get_width()) / 2
     complexity_y = draw_info.LARGE_FONT.get_height() + 2 * draw_info.FONT.get_height() + 10
     draw_info.window.blit(complexity_surface, (complexity_x, complexity_y))
+
 def draw_additional_info(draw_info):
     additional_info_text = "Made by Dominic Murphy"
     additional_info_surface = draw_info.SMALL_FONT.render(additional_info_text, 1, draw_info.BLACK)
