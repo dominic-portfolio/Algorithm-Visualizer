@@ -312,7 +312,7 @@ def main():
 
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_r:
-                    rnad_list = starting_list(n, min_val, max_val)
+                    rand_list = starting_list(n, min_val, max_val)
                     draw_info.set_list(rand_list)
                     sorting = False
                 elif event.key == pygame.K_SPACE and not sorting:

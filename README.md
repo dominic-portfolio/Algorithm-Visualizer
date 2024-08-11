@@ -1,10 +1,18 @@
-# Sorting Algorithm Visualizer
+# Sorting Algorithm Visualiser
 
-This project is a visualization tool for sorting algorithms, created using `pygame`. This program allows you to observe how different sorting algorithms work by visualizing the step-by-step process of sorting a list of numbers.
+- This project is a visualisation tool for sorting algorithms, created using `pygame`.
+- This program allows you to observe how different sorting algorithms work by visualising the step-by-step process of sorting a list of numbers.
+
+## Usage
+
+<p align="center">
+  <img src="https://github.com/dominic-portfolio/Algorithm-Visualizer/blob/master/usage.gif?raw=true" alt="program in use" />
+</p>
+
 
 ## Features
 
-- **Sorting Algorithms Visualized:**
+- **Sorting Algorithms Visualised:**
   - Bubble Sort
   - Insertion Sort
   - Selection Sort
@@ -32,3 +40,4 @@ To run this project, ensure you have Python installed. Then, install the necessa
 
 ```bash
 pip install pygame
+python Algorithm-Visualiser.py
